@@ -35,6 +35,6 @@ if __name__ == '__main__':
         time.sleep(seconds)
 
     for i in range(3):
-        snooze(.123)
+        snooze(.1)
 
 # end::CLOCKDECO_PARAM[]
