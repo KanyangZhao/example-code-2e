@@ -204,7 +204,7 @@ class Vector:
     def __getattr__(self, name):
         cls = type(self)  # <2>
         try:
-            pos = cls.__match_args__.index(name)  # <3>
+            pos = cls.__match_args__.index(name)  # <3> 返回在__match_args__中的位置
         except ValueError:  # <4>
             pos = -1
         if 0 <= pos < len(self._components):  # <5>
